@@ -183,14 +183,7 @@ function MetricCard({ title, value }: { title: string; value: string }) {
 }
 
 export default function Index() {
-  // Render dashboard within shared layout so "/" is the main app
-  return (
-    <Fragment>
-      <AppLayout />
-      {/* The Outlet in AppLayout renders DashboardInner via the route setup in App.tsx when used as parent. To render here directly for the index page entry, include DashboardInner below. */}
-      <div className="hidden" />
-    </Fragment>
-  );
+  return <DashboardInner />;
 }
 
 export { DashboardInner };
