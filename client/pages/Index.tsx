@@ -3,9 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
-import AppLayout from "@/components/layout/AppLayout";
 import { useInventory } from "@/context/inventory";
-import { Fragment } from "react";
 
 function DashboardInner() {
   const { state, utils } = useInventory();
